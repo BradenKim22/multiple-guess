@@ -1,0 +1,110 @@
+:root {
+    --primary:#000000;
+    --secondary:#838383;
+    --tetriary:#cff5e5;
+    --light: #ecddb3;
+    --buttons: #e7e7e7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+}
+
+/* Header */
+header {
+    text-align:center;
+}
+
+/* Header h1 */
+header h1 {
+    color: var(--tetriary);
+    font-size: 64pt;
+    -webkit-text-stroke: 2px var(--primary);
+}
+
+/* Class container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20vh 25% 20vh 25%;
+    height: 40vh;
+    background-color: var(--tetriary);
+    border: solid var(--primary) 2px;
+    border-radius: 5px;
+}
+
+/* Class status (first box in container) */
+.status {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--tetriary);
+}
+
+/* ID timer (first box first item) */
+#timer {
+    margin: 1%;
+    background-color: var(--tetriary);
+    border-bottom: solid var(--primary); /* May want to remove later to hide. */
+}
+/* ID score (first box second item) */
+#score {
+    margin: 1%;
+    background-color: var(--tetriary);
+    border-bottom: solid var(--primary); /* May want to remove later to hide. */
+}
+
+/* class multiple-choice (form) (second box in container) */
+.multiple-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--tetriary);
+}
+
+/* The Question */
+.multiple-choice h1 {
+    font-size: 22pt;
+    background-color: var(--tetriary);
+}
+
+/* Class option (all options) */
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    background-color: var(--tetriary);
+}
+
+/* ID option (each option) */
+.options button {
+    border-radius: 4px;
+    width: 40%;
+    padding: 5px;
+    border-color: var(--primary);
+    background-color: var(--buttons);
+}
+
+.options button:hover {
+    cursor: pointer;
+    background-color: var(--light);
+}
+
+/* he Results */
+.multiple-choice h2 {
+    margin: 10px;
+    font-size: 16pt;
+    background-color: var(--tetriary);
+}
