@@ -11,21 +11,39 @@
     <header>
         <h1>Code Quiz</h1>
     </header>
+    <!-- Begin Section -->
+    <section class="begin">
+        <h1>Instruction</h1>
+        <p>This is how it works...</p>
+        <form>
+            <button class="start" id="start">Start</button>
+        </form>
+    </section>
+    <!-- Questions Section -->
     <section class="container">
         <div class="status">
-            <h3 id="timer">Timer</h3>
+            <h3 id="timer">Time</h3>
             <h3 id="score">Score</h3>
         </div>
         <div class="multiple-choice">
             <h1 id="question">"Question Goes Here"</h1>
-            <form class="options">
-                <button class="a" id="a option">a</button>
+            <div id="options">
+                <!-- <button class="a" id="a option">a</button>
                 <button class="b" id="b option">b</button>
                 <button class="c" id="c option">c</button>
-                <button class="d" id="d option">d</button>
-            </form>
+                <button class="d" id="d option">d</button> -->
+            </div>
             <h2 id="result">Correct or Incorrect</h2>
         </div>
+    </section>
+    <!-- Saveing Initials Highscore Section -->
+    <section class="grade">
+        <h1>Final Score</h1>
+        <h2 id="end-score">#SCORE#</h2>
+        <form>
+            <input id="initials" placeholder="Initials" type="Initials">
+            <button class="save" id="save">Save</button>
+        </form>
     </section>
     <script src="./Assets/script.js"></script>
 </body>

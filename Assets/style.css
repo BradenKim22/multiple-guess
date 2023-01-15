@@ -6,10 +6,13 @@
     --buttons: #e7e7e7;
 }
 
+body {
+    background-color: var(--secondary);
+}
+
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--secondary);
 }
 
 /* Header */
@@ -25,11 +28,11 @@ header h1 {
 }
 
 /* Class container */
-.container {
+.container, .begin, .grade {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 20vh 25% 20vh 25%;
     height: 40vh;
     background-color: var(--tetriary);
@@ -43,20 +46,13 @@ header h1 {
     justify-content: space-between;
     width: 100%;
     border-radius: 5px;
-    background-color: var(--tetriary);
 }
 
-/* ID timer (first box first item) */
-#timer {
+/* ID timer (first box first item) and Score (first box second item) */
+#timer, #score {
     margin: 1%;
-    background-color: var(--tetriary);
-    border-bottom: solid var(--primary); /* May want to remove later to hide. */
-}
-/* ID score (first box second item) */
-#score {
-    margin: 1%;
-    background-color: var(--tetriary);
-    border-bottom: solid var(--primary); /* May want to remove later to hide. */
+    text-align: center;
+    border-bottom: solid var(--primary);
 }
 
 /* class multiple-choice (form) (second box in container) */
@@ -68,28 +64,25 @@ header h1 {
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    background-color: var(--tetriary);
 }
 
 /* The Question */
 .multiple-choice h1 {
     font-size: 22pt;
-    background-color: var(--tetriary);
 }
 
 /* Class option (all options) */
-.options {
+#options {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
-    background-color: var(--tetriary);
 }
 
 /* ID option (each option) */
-.options button {
+#options button {
     border-radius: 4px;
     width: 40%;
     padding: 5px;
@@ -97,7 +90,7 @@ header h1 {
     background-color: var(--buttons);
 }
 
-.options button:hover {
+#options button:hover {
     cursor: pointer;
     background-color: var(--light);
 }
@@ -106,5 +99,58 @@ header h1 {
 .multiple-choice h2 {
     margin: 10px;
     font-size: 16pt;
-    background-color: var(--tetriary);
+}
+
+/* Added the begin and grade quiz boxes */
+
+/* Instruction and Final Score Title */
+.begin h1, .grade h1 {
+    font-size: xx-large;
+}
+
+/* Score Font and Final Box */
+.grade h2 {
+    font-size: x-large;
+}
+
+/* Instructions paragraph */
+.begin p {
+    font-size: large;
+}
+
+/* Start Button */
+.begin form button {
+    background-color: var(--buttons);
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+/* Start Button and Save Button Hover */
+.begin form button:hover, .grade form button:hover {
+    cursor: pointer;
+}
+
+/* Initial input and save button stacked vertical */
+.grade form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Size and etc. for the Input Initials */
+.grade form input {
+    height: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+/* Save button CSS */
+.grade form button {
+    background-color: var(--buttons);
+    height: 25px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 5px;
 }
