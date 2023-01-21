@@ -30,10 +30,10 @@ THEN I can save my initials and my score
 
 ## Mock-Up
 
-![](./assets/images/multiple-guess1.png)
-![](./assets/images/multiple-guess2.png)
-![](./assets/images/multiple-guess3.png)
-![](./assets/images/multiple-guess4.png)
+![](./Assets/images/multiple-guess1.png)
+![](./Assets/images/multiple-guess2.png)
+![](./Assets/images/multiple-guess3.png)
+![](./Assets/images/multiple-guess4.png)
 
 ## Installation
 
