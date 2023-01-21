@@ -14,9 +14,12 @@
     <!-- Begin Section -->
     <section class="begin">
         <h1>Instruction</h1>
-        <p>This is how it works...</p>
+        <p>You are given 60 seconds to complete the quiz.<br>
+        Every answer you get right you will gain 10 points.<br>
+        Every answer you get wrong it will subtract 10 seconds.<br>
+        Good Luck!</p>
         <form>
-            <button class="start" id="start">Start</button>
+            <button id="start">Start</button>
         </form>
     </section>
     <!-- Questions Section -->
@@ -33,16 +36,17 @@
                 <button class="c" id="c option">c</button>
                 <button class="d" id="d option">d</button> -->
             </div>
-            <h2 id="result">Correct or Incorrect</h2>
+            <h2 id="result">🤔</h2>
         </div>
     </section>
-    <!-- Saveing Initials Highscore Section -->
+    <!-- Saving Initials Highscore Section -->
     <section class="grade">
-        <h1>Final Score</h1>
+        <h1 id="end-title">Final Score</h1>
         <h2 id="end-score">#SCORE#</h2>
         <form>
-            <input id="initials" placeholder="Initials" type="Initials">
-            <button class="save" id="save">Save</button>
+            <input id="initials" placeholder="Initials">
+            <button id="save">Save</button>
+            <button id="reset">Retake Quiz</button>
         </form>
     </section>
     <script src="./Assets/script.js"></script>
