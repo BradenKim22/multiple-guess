@@ -38,6 +38,9 @@ header h1 {
     background-color: var(--tetriary);
     border: solid var(--primary) 2px;
     border-radius: 5px;
+    /* Below May be good to know later.. */
+    /* position: absolute; */
+    /* width: 850px; */
 }
 
 /* Class status (first box in container) */
@@ -69,6 +72,8 @@ header h1 {
 /* The Question */
 .multiple-choice h1 {
     font-size: 22pt;
+    width: 90%;
+    text-align: center;
 }
 
 /* Class option (all options) */
@@ -91,7 +96,6 @@ header h1 {
 }
 
 #options button:hover {
-    cursor: pointer;
     background-color: var(--light);
 }
 
@@ -116,10 +120,11 @@ header h1 {
 /* Instructions paragraph */
 .begin p {
     font-size: large;
+    text-align: center;
 }
 
-/* Start Button */
-.begin form button {
+/* Start Button and Reset Button*/
+.begin form button, #reset {
     background-color: var(--buttons);
     height: 50px;
     width: 100px;
@@ -128,7 +133,7 @@ header h1 {
 }
 
 /* Start Button and Save Button Hover */
-.begin form button:hover, .grade form button:hover {
+button:hover {
     cursor: pointer;
 }
 
@@ -147,7 +152,7 @@ header h1 {
 }
 
 /* Save button CSS */
-.grade form button {
+#save {
     background-color: var(--buttons);
     height: 25px;
     width: 50px;
