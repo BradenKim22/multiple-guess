@@ -30,7 +30,10 @@ THEN I can save my initials and my score
 
 ## Mock-Up
 
-<Enter Image Here>
+![](./assets/images/multiple-guess1.png)
+![](./assets/images/multiple-guess2.png)
+![](./assets/images/multiple-guess3.png)
+![](./assets/images/multiple-guess4.png)
 
 ## Installation
 
@@ -46,7 +49,7 @@ N/A
 
 ## Deployment
 
-Application deployed at <Link>
+Application deployed at https://bradenkim22.github.io/multiple-guess/
 
 ## License
 
